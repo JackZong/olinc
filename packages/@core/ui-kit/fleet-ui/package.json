@@ -1,0 +1,46 @@
+{
+  "name": "@olinc-core/fleet-ui",
+  "version": "1.0.0",
+  "#main": "./dist/index.mjs",
+  "#module": "./dist/index.mjs",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/@olinc-core/uikit/fleet-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "#build": "pnpm unbuild",
+    "#prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts",
+      "//default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "fleet-ui": "catalog:",
+    "vue": "catalog:"
+  }
+}

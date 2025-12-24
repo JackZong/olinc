@@ -1,0 +1,55 @@
+{
+  "name": "@olinc/common-ui",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/effects/common-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./es/tippy": {
+      "types": "./src/components/tippy/index.ts",
+      "default": "./src/components/tippy/index.ts"
+    },
+    "./es/loading": {
+      "types": "./src/components/loading/index.ts",
+      "default": "./src/components/loading/index.ts"
+    }
+  },
+  "dependencies": {
+    "@olinc-core/fleet-ui": "workspace:*",
+    "@olinc-core/form-ui": "workspace:*",
+    "@olinc-core/popup-ui": "workspace:*",
+    "@olinc-core/preferences": "workspace:*",
+    "@olinc-core/shadcn-ui": "workspace:*",
+    "@olinc-core/shared": "workspace:*",
+    "@olinc/constants": "workspace:*",
+    "@olinc/hooks": "workspace:*",
+    "@olinc/icons": "workspace:*",
+    "@olinc/locales": "workspace:*",
+    "@olinc/types": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "@vueuse/integrations": "catalog:",
+    "json-bigint": "catalog:",
+    "qrcode": "catalog:",
+    "tippy.js": "catalog:",
+    "vue": "catalog:",
+    "vue-json-viewer": "catalog:",
+    "vue-router": "catalog:",
+    "vue-tippy": "catalog:"
+  },
+  "devDependencies": {
+    "@types/qrcode": "catalog:"
+  }
+}

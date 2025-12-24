@@ -1,0 +1,35 @@
+{
+  "name": "@olinc/docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "docs:preview": "vitepress preview"
+  },
+  "imports": {
+    "@/*": {
+      "node": "./src/_env/node/*",
+      "default": "./src/_env/*"
+    }
+  },
+  "dependencies": {
+    "@olinc-core/shadcn-ui": "workspace:*",
+    "@olinc/common-ui": "workspace:*",
+    "@olinc/locales": "workspace:*",
+    "@olinc/plugins": "workspace:*",
+    "@olinc/styles": "workspace:*",
+    "ant-design-vue": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "medium-zoom": "catalog:",
+    "reka-ui": "catalog:",
+    "vitepress-plugin-group-icons": "catalog:"
+  },
+  "devDependencies": {
+    "@nolebase/vitepress-plugin-git-changelog": "catalog:",
+    "@olinc/vite-config": "workspace:*",
+    "@vite-pwa/vitepress": "catalog:",
+    "vitepress": "catalog:",
+    "vue": "catalog:"
+  }
+}

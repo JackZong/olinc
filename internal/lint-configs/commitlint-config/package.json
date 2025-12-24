@@ -1,0 +1,33 @@
+{
+  "name": "@olinc/commitlint-config",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "internal/lint-configs/commitlint-config"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@olinc/node-utils": "workspace:*",
+    "commitlint-plugin-function-rules": "catalog:",
+    "cz-git": "catalog:",
+    "czg": "catalog:"
+  }
+}

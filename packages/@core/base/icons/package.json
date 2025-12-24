@@ -1,0 +1,41 @@
+{
+  "name": "@olinc-core/icons",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/@olinc-core/base/icons"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm unbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "dependencies": {
+    "@iconify/vue": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "vue": "catalog:"
+  }
+}

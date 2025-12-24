@@ -1,0 +1,54 @@
+{
+  "name": "@olinc-core/shadcn-ui",
+  "version": "1.0.0",
+  "#main": "./dist/index.mjs",
+  "#module": "./dist/index.mjs",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/@olinc-core/uikit/shadcn-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "#build": "pnpm unbuild",
+    "#prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts",
+      "//default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@olinc-core/composables": "workspace:*",
+    "@olinc-core/icons": "workspace:*",
+    "@olinc-core/shared": "workspace:*",
+    "@olinc-core/typings": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "class-variance-authority": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "reka-ui": "catalog:",
+    "vee-validate": "catalog:",
+    "vue": "catalog:"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@olinc/types",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/types"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./global": {
+      "types": "./global.d.ts"
+    }
+  },
+  "dependencies": {
+    "@olinc-core/typings": "workspace:*",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

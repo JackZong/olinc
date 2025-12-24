@@ -1,0 +1,176 @@
+{
+  "folders": [
+    {
+      "name": "@olinc/backend-mock",
+      "path": "apps/backend-mock",
+    },
+    {
+      "name": "@olinc/web-antd",
+      "path": "apps/web-antd",
+    },
+    {
+      "name": "@olinc/web",
+      "path": "apps/web",
+    },
+    {
+      "name": "@olinc/web-naive",
+      "path": "apps/web-naive",
+    },
+    {
+      "name": "@olinc/web-tdesign",
+      "path": "apps/web-tdesign",
+    },
+    {
+      "name": "@olinc/docs",
+      "path": "docs",
+    },
+    {
+      "name": "@olinc/commitlint-config",
+      "path": "internal/lint-configs/commitlint-config",
+    },
+    {
+      "name": "@olinc/eslint-config",
+      "path": "internal/lint-configs/eslint-config",
+    },
+    {
+      "name": "@olinc/prettier-config",
+      "path": "internal/lint-configs/prettier-config",
+    },
+    {
+      "name": "@olinc/stylelint-config",
+      "path": "internal/lint-configs/stylelint-config",
+    },
+    {
+      "name": "@olinc/node-utils",
+      "path": "internal/node-utils",
+    },
+    {
+      "name": "@olinc/tailwind-config",
+      "path": "internal/tailwind-config",
+    },
+    {
+      "name": "@olinc/tsconfig",
+      "path": "internal/tsconfig",
+    },
+    {
+      "name": "@olinc/vite-config",
+      "path": "internal/vite-config",
+    },
+    {
+      "name": "@olinc-core/design",
+      "path": "packages/@core/base/design",
+    },
+    {
+      "name": "@olinc-core/icons",
+      "path": "packages/@core/base/icons",
+    },
+    {
+      "name": "@olinc-core/shared",
+      "path": "packages/@core/base/shared",
+    },
+    {
+      "name": "@olinc-core/typings",
+      "path": "packages/@core/base/typings",
+    },
+    {
+      "name": "@olinc-core/composables",
+      "path": "packages/@core/composables",
+    },
+    {
+      "name": "@olinc-core/preferences",
+      "path": "packages/@core/preferences",
+    },
+    {
+      "name": "@olinc-core/form-ui",
+      "path": "packages/@core/ui-kit/form-ui",
+    },
+    {
+      "name": "@olinc-core/layout-ui",
+      "path": "packages/@core/ui-kit/layout-ui",
+    },
+    {
+      "name": "@olinc-core/menu-ui",
+      "path": "packages/@core/ui-kit/menu-ui",
+    },
+    {
+      "name": "@olinc-core/popup-ui",
+      "path": "packages/@core/ui-kit/popup-ui",
+    },
+    {
+      "name": "@olinc-core/shadcn-ui",
+      "path": "packages/@core/ui-kit/shadcn-ui",
+    },
+    {
+      "name": "@olinc-core/tabs-ui",
+      "path": "packages/@core/ui-kit/tabs-ui",
+    },
+    {
+      "name": "@olinc/constants",
+      "path": "packages/constants",
+    },
+    {
+      "name": "@olinc/access",
+      "path": "packages/effects/access",
+    },
+    {
+      "name": "@olinc/common-ui",
+      "path": "packages/effects/common-ui",
+    },
+    {
+      "name": "@olinc/hooks",
+      "path": "packages/effects/hooks",
+    },
+    {
+      "name": "@olinc/layouts",
+      "path": "packages/effects/layouts",
+    },
+    {
+      "name": "@olinc/plugins",
+      "path": "packages/effects/plugins",
+    },
+    {
+      "name": "@olinc/request",
+      "path": "packages/effects/request",
+    },
+    {
+      "name": "@olinc/icons",
+      "path": "packages/icons",
+    },
+    {
+      "name": "@olinc/locales",
+      "path": "packages/locales",
+    },
+    {
+      "name": "@olinc/preferences",
+      "path": "packages/preferences",
+    },
+    {
+      "name": "@olinc/stores",
+      "path": "packages/stores",
+    },
+    {
+      "name": "@olinc/styles",
+      "path": "packages/styles",
+    },
+    {
+      "name": "@olinc/types",
+      "path": "packages/types",
+    },
+    {
+      "name": "@olinc/utils",
+      "path": "packages/utils",
+    },
+    {
+      "name": "@olinc/playground",
+      "path": "playground",
+    },
+    {
+      "name": "@olinc/turbo-run",
+      "path": "scripts/turbo-run",
+    },
+    {
+      "name": "@olinc/vsh",
+      "path": "scripts/vsh",
+    },
+  ],
+}

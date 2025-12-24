@@ -1,0 +1,25 @@
+{
+  "name": "@olinc/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "internal/tsconfig"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ],
+  "dependencies": {
+    "@olinc/types": "workspace:*",
+    "vite": "catalog:"
+  }
+}

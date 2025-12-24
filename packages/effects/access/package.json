@@ -1,0 +1,29 @@
+{
+  "name": "@olinc/access",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/effects/permissions"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@olinc/preferences": "workspace:*",
+    "@olinc/stores": "workspace:*",
+    "@olinc/types": "workspace:*",
+    "@olinc/utils": "workspace:*",
+    "vue": "catalog:"
+  }
+}

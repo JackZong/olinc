@@ -1,0 +1,28 @@
+{
+  "name": "@olinc/locales",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/locales"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@intlify/core-base": "catalog:",
+    "@olinc-core/composables": "workspace:*",
+    "vue": "catalog:",
+    "vue-i18n": "catalog:"
+  }
+}

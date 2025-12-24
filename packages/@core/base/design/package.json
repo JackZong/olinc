@@ -1,0 +1,38 @@
+{
+  "name": "@olinc-core/design",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JackZong/olinc",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "packages/@olinc-core/base/design"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "./bem": {
+      "development": "./src/scss-bem/bem.scss",
+      "default": "./dist/bem.scss"
+    },
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/design.css"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.paxcq.com"
+  }
+}
