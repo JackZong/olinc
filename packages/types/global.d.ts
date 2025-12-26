@@ -28,5 +28,12 @@ export interface ApplicationConfig {
 declare global {
   interface Window {
     _OLINC_ADMIN_PRO_APP_CONF_: OlincAdminProAppConfigRaw;
+    microApp: any;
+    eventCenterForViteApp: any;
+    __MICRO_APP_ENVIRONMENT__: boolean;
+    __MICRO_APP_PUBLIC_PATH__: string;
+    __MICRO_APP_BASE_APPLICATION__: boolean;
+    eventCenterForSubApp: any;
+    unmount: () => void;
   }
 }

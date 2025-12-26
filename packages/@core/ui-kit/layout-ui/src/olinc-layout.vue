@@ -32,6 +32,7 @@ defineOptions({
 });
 
 const props = withDefaults(defineProps<Props>(), {
+  isMainApp: false,
   contentCompact: 'wide',
   contentCompactWidth: 1200,
   contentPadding: 0,
@@ -578,6 +579,7 @@ const idMainContent = ELEMENT_ID_MAIN_CONTENT;
       <!-- </div> -->
       <LayoutContent
         :id="idMainContent"
+        :is-main-app="isMainApp"
         :content-compact="contentCompact"
         :content-compact-width="contentCompactWidth"
         :padding="contentPadding"

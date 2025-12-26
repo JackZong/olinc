@@ -1,0 +1,53 @@
+{
+  "name": "@olinc/template",
+  "version": "1.0.0",
+  "homepage": "https://olinc.pro",
+  "bugs": "https://github.com/JackZong/olinc/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZong/olinc.git",
+    "directory": "apps/web"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "olinc",
+    "email": "cqzongjian@gmail.com",
+    "url": "https://github.com/JackZong"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "@/*": "./src/*"
+  },
+  "dependencies": {
+    "@olinc/access": "workspace:*",
+    "@olinc/common-ui": "workspace:*",
+    "@olinc/constants": "workspace:*",
+    "@olinc/hooks": "workspace:*",
+    "@olinc/icons": "workspace:*",
+    "@olinc/layouts": "workspace:*",
+    "@olinc/locales": "workspace:*",
+    "@olinc/plugins": "workspace:*",
+    "@olinc/preferences": "workspace:*",
+    "@olinc/request": "workspace:*",
+    "@olinc/stores": "workspace:*",
+    "@olinc/styles": "workspace:*",
+    "@olinc/types": "workspace:*",
+    "@olinc/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "dayjs": "catalog:",
+    "element-plus": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  },
+  "devDependencies": {
+    "unplugin-element-plus": "catalog:"
+  }
+}

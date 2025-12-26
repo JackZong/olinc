@@ -7,6 +7,11 @@ import type {
 
 interface OlincLayoutProps {
   /**
+   * 是否主应用
+   * @default false
+   */
+  isMainApp?: boolean;
+  /**
    * 内容区域定宽
    * @default 'wide'
    */

@@ -5,15 +5,26 @@ import type {
   RouteLocationNormalizedLoadedGeneric,
 } from 'vue-router';
 
+import type { MicroApp } from '@olinc/types';
+
 import { computed } from 'vue';
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
 
 import { preferences, usePreferences } from '@olinc/preferences';
 import { getTabKey, storeToRefs, useTabbarStore } from '@olinc/stores';
 
 import { IFrameRouterView } from '../../iframe';
+import { MicroAppRouterView } from '../../micro-app';
+
+interface Props {
+  activeApp?: MicroApp | null;
+}
 
 defineOptions({ name: 'LayoutContent' });
+
+withDefaults(defineProps<Props>(), {
+  activeApp: null,
+});
 
 const tabbarStore = useTabbarStore();
 const { keepAlive } = usePreferences();
@@ -94,10 +105,13 @@ function transformComponent(
 
   return component;
 }
+const { meta } = useRoute();
+console.log('route meta:', meta);
 </script>
 
 <template>
   <div class="relative h-full">
+    <MicroAppRouterView :active-app="activeApp" />
     <IFrameRouterView />
     <RouterView v-slot="{ Component, route }">
       <Transition

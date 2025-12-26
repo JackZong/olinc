@@ -58,6 +58,13 @@ async function loadCommonPlugins(
             defineModel: true,
             // propsDestructure: true,
           },
+          // fix: [Vue warn]: Component is missing template or render function
+          template: {
+            compilerOptions: {
+              isCustomElement: (tag) =>
+                ['micro-app'].some((prefix) => tag.startsWith(prefix)),
+            },
+          },
         }),
         viteVueJsx(),
       ],

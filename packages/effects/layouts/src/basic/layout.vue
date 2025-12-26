@@ -2,7 +2,9 @@
 import type { SetupContext } from 'vue';
 import type { RouteLocationNormalizedLoaded } from 'vue-router';
 
-import type { MenuRecordRaw } from '@olinc/types';
+import type { MenuRecordRaw, MicroApp } from '@olinc/types';
+
+import type { OlincLayoutProps } from '@olinc-core/layout-ui';
 
 import { computed, onMounted, useSlots, watch } from 'vue';
 import { useRoute } from 'vue-router';
@@ -34,7 +36,16 @@ import {
 } from './menu';
 import { LayoutTabbar } from './tabbar';
 
+interface Props extends OlincLayoutProps {
+  apps?: MicroApp[];
+}
+
 defineOptions({ name: 'BasicLayout' });
+
+const props = withDefaults(defineProps<Props>(), {
+  isMainApp: false,
+  apps: () => [],
+});
 
 const emit = defineEmits<{ clearPreferencesAndLogout: []; clickLogo: [] }>();
 
@@ -195,6 +206,12 @@ const slots: SetupContext['slots'] = useSlots();
 const headerSlots = computed(() => {
   return Object.keys(slots).filter((key) => key.startsWith('header-'));
 });
+
+// 获取被激活的应用
+const getActiveMicroApp = function (path: string) {
+  return props.apps.find((item) => path.startsWith(item.baseroute));
+};
+const activeApp = computed(() => getActiveMicroApp(route.path));
 </script>
 
 <template>
@@ -372,7 +389,7 @@ const headerSlots = computed(() => {
 
     <!-- 主体内容 -->
     <template #content>
-      <LayoutContent />
+      <LayoutContent :is-main-app="isMainApp" :active-app="activeApp" />
     </template>
 
     <template v-if="preferences.transition.loading" #content-overlay>
